@@ -1,4 +1,4 @@
-resource "google_compute_instance" "k8s_controller" {
+resource google_compute_instance "k8s_controller" {
   boot_disk {
     auto_delete = true
 
@@ -294,7 +294,7 @@ resource "google_compute_instance" "k8s_controller" {
   zone = "${var.region}-${lookup(var.zone_map, count.index)}"
 }
 
-resource "google_compute_instance" "k8s_worker" {
+resource google_compute_instance "k8s_worker" {
   boot_disk {
     auto_delete = true
 
