@@ -183,3 +183,4 @@ tags
 *.key
 *.pem
 configs/encryption-config.yaml
+k8s-the-hard-way-tf-kf-d736d13c4cc8.json
